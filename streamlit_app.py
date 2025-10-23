@@ -68,7 +68,7 @@ tabs = st.tabs(["Document", "Actions", "Chat & QA", "MCQs & Downloads"])
 
 # Document Tab
 with tabs[0]:
-    st.subheader("Document Preeview")
+    st.subheader("Preview Document")
     if st.session_state.uploaded_path:
         file_name = Path(st.session_state.uploaded_path).name
         size_kb = Path(st.session_state.uploaded_path).stat().st_size // 1024
